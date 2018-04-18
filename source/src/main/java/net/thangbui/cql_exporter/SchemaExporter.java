@@ -28,7 +28,7 @@ import java.util.concurrent.TimeUnit;
  */
 public class SchemaExporter {
     public static int FETCH_SIZE;
-    public static final int NO_OF_ENTRY_BOUND = 10000;
+    public static final int NO_OF_ENTRY_BOUND = 1000;
 
     private String host;
     private int    port;
