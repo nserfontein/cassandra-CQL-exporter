@@ -163,7 +163,7 @@ public class SchemaExporter {
 
         SocketOptions socketOptions = cluster.getConfiguration().getSocketOptions();
         socketOptions.setConnectTimeoutMillis(10000);
-        socketOptions.setReadTimeoutMillis(15000);
+        socketOptions.setReadTimeoutMillis(240000);
         socketOptions.setKeepAlive(true);
 
         System.out.printf("Trying connect to keyspace \"%s\"" + Main.LINE_SEPARATOR, keyspaceName);
