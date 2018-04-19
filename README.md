@@ -21,6 +21,12 @@ Generated script contains 2 component:
 Be careful that script will be forward-compatible but not guarantee to be backward-compatible especially DDL statements. It's better that export and import using same Cassandra version.
 I'm using this on a daily basis. But anyways, use this at **YOUR OWN RISK**!
 
+## Build executable _jar_
+```bash
+mvn clean compile assembly:single
+java -jar ./target/cql-exporter-1.0.jar <options>
+```
+
 ## Usage
 ```
 usage: cql-export [--drop] [-f <file name>] [-fo] [-h <host>] [--help] [-k <keyspace>] [-l] [-m]
